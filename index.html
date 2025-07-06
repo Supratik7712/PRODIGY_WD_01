@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar{
+            background-color:blueviolet;
+            border-radius: 30px;
+            border: 2px solid black;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 12px 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .navbar.scrolled{
+            background-color: black;
+            box-shadow: 0 4px 12px red;
+        }
+        .navbar ul{
+            margin:0;
+            padding: 0;
+            list-style: none;
+            overflow: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .navbar li{
+            display: inline;
+        }
+        .navbar li a {
+            padding: 8px 16px;
+            text-decoration: none;
+            color: azure;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .navbar li a:hover{
+            background-color: antiquewhite;
+            color: red;
+
+        }
+        .search{
+            float: right;
+        }
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 50px;
+            padding: 5px 10px;
+            width: 150px;
+        }
+        /*Adding margin-top so that the content does not go behind fixed navbar*/ 
+        .content{
+            margin-top: 100px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar Content-->
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li class="search">
+            <input type="text" placeholder ="Search this Website"></li>
+                </ul>
+    </nav>
+    <!--Page Body Content-->
+    <div class="content">
+        <h2>&nbspHome</h2>
+        <p>Hover over the navbar menu options to see the background and color changes!</p>
+        <p>Scroll down and see how the naviagtion bar changes!</p>
+        <h2>&nbspAbout</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo expedita consequatur similique, nihil voluptatem necessitatibus eveniet odio odit repellendus animi perspiciatis nemo perferendis consectetur, assumenda distinctio minima! Praesentium, modi voluptate, illum alias cupiditate architecto odit fugiat atque quaerat consectetur eius, debitis consequatur magni ducimus officiis ipsum veritatis iste sapiente laudantium. Aspernatur, illum pariatur. Illo officia, molestias fugiat doloribus sapiente et dolores ut aut! Magnam error nam totam vel iste dolore cum reprehenderit? Sunt neque odio sint distinctio expedita atque magni temporibus? At commodi, praesentium distinctio quis ipsa magni, animi recusandae quae sequi iure a rerum eius perspiciatis quaerat atque vel, quia dolor qui blanditiis. Similique deleniti totam iusto natus distinctio sint adipisci, perferendis odio mollitia at provident fuga! Ut, delectus facilis nisi totam, possimus, necessitatibus error consequuntur doloribus unde debitis labore asperiores tenetur enim ratione iure voluptatem libero ex. Porro et blanditiis quasi, hic nihil consequuntur molestiae! Nulla beatae cumque vitae eum labore eos eligendi earum aspernatur, natus ullam dicta? Excepturi, corrupti ex. Deleniti unde fugit quos suscipit at, laboriosam voluptatum cupiditate id laudantium tempora repellendus voluptates vel temporibus nulla animi. Harum doloribus eaque rem inventore quibusdam quidem placeat perferendis et. Excepturi, voluptatem nobis libero quibusdam numquam porro laboriosam recusandae?
+        </p>
+        <h2>&nbspServices</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, minima. Reiciendis dolore magni atque alias veritatis quas tempore voluptatibus ducimus eius, culpa, nemo excepturi quidem aliquid vitae minus facilis sunt fugit voluptatum asperiores error aut sint? Praesentium harum quod tempore, nisi, eligendi fugit incidunt porro totam dolores sit facere sapiente minima voluptatem vel ut eum necessitatibus numquam culpa doloremque reprehenderit itaque fugiat excepturi tempora! Sint earum delectus nostrum ab eius corporis architecto, quisquam reiciendis odit excepturi aperiam amet tempore eum ratione ad enim? Iure, temporibus? Temporibus nostrum beatae at totam sapiente quaerat voluptates cumque iure quo voluptatum magni quod exercitationem provident libero quam natus fugit quos accusamus ullam explicabo molestiae, praesentium illo iusto! Ducimus dicta, fuga inventore cupiditate fugit voluptatem obcaecati molestias esse. Officia impedit earum neque illo non adipisci eligendi, esse recusandae officiis sint alias atque assumenda provident sequi mollitia quis. Sit maiores voluptas cupiditate cumque ducimus, soluta Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, alias. Reiciendis, quisquam natus fugiat corrupti sed omnis? Exercitationem possimus aut, molestiae assumenda enim neque distinctio nobis architecto delectus, illum, quis voluptas saepe sed in ab! Sint nemo ipsa numquam deleniti molestiae enim eaque! Quasi quo culpa autem at eius tempore consectetur vitae officiis provident facilis repellat explicabo omnis aliquam dignissimos consequuntur ipsa nesciunt animi, asperiores reprehenderit? Fuga modi assumenda eligendi, alias perspiciatis quae id minus labore pariatur, doloremque dolores! Illo, velit ea similique in atque voluptate corporis ratione nihil delectus optio voluptates libero quia ipsa odio eius quae cupiditate minus iste temporibus ab ipsum pariatur doloremque et dicta! Pariatur vero nostrum facilis tenetur in animi quae veritatis? Voluptate velit molestias illo fugiat numquam a repudiandae sint assumenda, ipsum error perferendis! Deserunt quos aspernatur ratione culpa, totam dolor repellat veniam facere, nisi commodi quo saepe quibusdam possimus provident neque labore sin Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis minus nisi culpa dolorum natus maxime quibusdam, voluptates itaque perferendis excepturi quidem sapiente, recusandae, voluptatem rerum pariatur in a? Architecto magni aliquid, culpa possimus nisi autem ipsum officiis molestiae sint aperiam iusto. Fugiat officia deserunt cumque reiciendis rem. Commodi id excepturi voluptatum ab doloremque blanditiis laudantium nemo, eveniet deserunt et exercitationem iusto, ipsa qui ratione labore ut voluptate, suscipit tempore eum! Deleniti officiis possimus laudantium. Est, tempore sit officiis, assumenda quidem magnam rem distinctio cupiditate aperiam provident harum numquam! Consequatur temporibus dicta ad quia doloremque suscipit laboriosam, assumenda ipsa nam commodi debitis et, rerum eveniet? Exercitationem, atque, laudantium, cupiditate ipsa nemo sequi sunt inventore esse ratione porro itaque! Consequuntur aperiam, deserunt fuga quas illum ipsa quae non doloribus quod repellendus molestiae illo quam. Reiciendis optio, beatae hic amet ullam odit. Totam nulla vero tempore blanditiis quidem quam, maxime alias consectetur nobis iusto accusamus necessitatibus quasi, quaerat, doloribus quibusdam ad optio. Facere, doloribus in facilis neque aperiam esse cumque atque optio itaque id porro accusamus quos natus quaerat laborum hic magnam exercitationem fugiat velit ipsum quod illum obcaecati! Voluptatibus ducimus et error est quos quas aut quis nam aperiam consequatur, sed in?
+        </p>
+        <h2>&nbspContact Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quia. Facilis distinctio in vel reiciendis incidunt. Atque, laudantium eius facilis eos accusantium ex aut, ratione porro nulla provident tempora expedita? Accusamus atque harum, et soluta illum corrupti repudiandae vero blanditiis obcaecati ab enim alias nam minus voluptate eligendi, eos autem sit dolore, incidunt debitis voluptatum! Corrupti aliquam dolore alias nisi? Voluptatem a recusandae aperiam ullam et iste labore. Atque a quidem similique at, iusto quasi voluptas vel. Facilis corporis doloremque deleniti aliquam nulla aliquid non delectus molestiae neque quasi? Facilis numquam sed ratione nesciunt accusamus dolore assumenda odio pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed delectus expedita distinctio commodi! Fugit labore reprehenderit illum quasi aliquid praesentium, molestiae iusto facilis quaerat eos natus perferendis voluptas maiores officiis corrupti cumque tempora laudantium consequatur ad quo obcaecati nesciunt quidem. Est nesciunt facere esse et consequatur mollitia sed, rerum doloremque ullam culpa ratione maxime quia repellat veniam nostrum provident ea, iure dolorem officiis, asperiores itaque. Porro nihil impedit necessitatibus nam tempora laborum dolorum cumque perspiciatis, officiis quae deleniti magnam explicabo cupiditate exercitationem atque aperiam aliquid vitae possimus quisquam voluptate quidem sequi. Consequatur, recusandae! Impedit temporibus doloremque laborum error, eos quos rerum qui quo? Esse eos veniam eaque quod neque. Voluptas consequatur unde nulla tempore fugiat nobis minus aspernatur perferendis consequuntur commodi harum sit voluptatum doloribus ipsa minima, consectetur nam recusandae! Culpa ex cumque tempora est necessitatibus soluta error adipisci eligendi et autem suscipit minima, beatae quis assumenda blanditiis impedit ratione! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ut numquam cupiditate voluptatibus fugiat enim blanditiis perferendis itaque. Aperiam quis veniam est, soluta assumenda quaerat provident laborum culpa maxime fugiat nobis repudiandae nemo minus, placeat inventore hic voluptatibus eum rem voluptates ducimus. Commodi cupiditate provident veniam illum nesciunt reprehenderit quod consequatur soluta nisi, maiores quae eligendi eos doloremque magnam vitae, maxime numquam nobis quibusdam consectetur optio impedit inventore! Natus placeat provident doloremque ea reiciendis delectus ut dignissimos velit tempora officia odio perferendis, exercitationem sed libero fugit! Amet sequi ratione deleniti eaque blanditiis natus doloremque provident adipisci dolorum, sapiente qui et repellat itaque ea nulla unde, iste ex cumque, voluptas officiis! Ipsum veniam deleniti doloremque porro quod voluptates perferendis? Odio blanditiis dignissimos delectus consequuntur quod itaque mollitia cupiditate consequatur enim magni fuga, voluptas laborum alias error. Earum dolorum, quisquam incidunt accusantium vel reiciendis facere voluptatibus optio deleniti harum qui ratione repellendus?</p>
+    </div>
+    <!--Javascript-->
+    <script>
+        const navbar= document.getElementById("navbar");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY>50){
+                navbar.classList.add("scrolled");
+            }else{
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+            
+</body>
+</html>
